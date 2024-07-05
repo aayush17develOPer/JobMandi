@@ -22,12 +22,6 @@ public class PostController {
     @Autowired
     SearchRepo srepo;
 
-    @GetMapping("/bc")
-    public String getMethodName() {
-        return "Bhenchod";
-    }
-    
-
     @GetMapping("/allPosts")
     @CrossOrigin
     public List<Post> getAllPosts(){
